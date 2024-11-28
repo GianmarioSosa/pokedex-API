@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 12px;
+      height: 16px;
+    }
+
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background-color: #4F60E2;
+      border-radius: 10px;
+      border: 3px solid #f1f1f1;
+    }
+
+    .pokemon-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 16px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="grid grid-cols-1 bg-gradient-to-r from-cyan-500 to-blue-500">
+  <nav class="flex justify-center items-center p-[20px]">
+    <div>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1200px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokemon" class="w-[200px] md:w-[400px]">
+    </div>
+  </nav>
+  <div class="overflow-x-auto p-[20px] custom-scrollbar">
+    <div class="flex space-x-4 align-center justify-center">
+      <button class="p-[5px] bg-[#DCDCDC] rounded font-bold text-[12px] w-[100px]">Normal</button>
+      <button class="p-[5px] bg-[#B22222] rounded font-bold text-[12px] w-[100px]">Fuego</button>
+      <button class="p-[5px] bg-[#91BFF7] rounded font-bold text-[12px] w-[100px]">Agua</button>
+      <button class="p-[5px] bg-[#32CD32] rounded font-bold text-[12px] w-[100px]">Planta</button>
+      <button class="p-[5px] bg-[#FCDF7F] rounded font-bold text-[12px] w-[100px]">Electrico</button>
+      <button class="p-[5px] bg-[#9DEBFF] rounded font-bold text-[12px] w-[100px]">Hielo</button>
+      <button class="p-[5px] bg-[#FFBF7F] rounded font-bold text-[12px] w-[100px]">Lucha</button>
+      <button class="p-[5px] bg-[#923FCC] rounded font-bold text-[12px] w-[100px]">Veneno</button>
+      <button class="p-[5px] bg-[#C8A78C] rounded font-bold text-[12px] w-[100px]">Tierra</button>
+      <button class="p-[5px] bg-[#82BAF0] rounded font-bold text-[12px] w-[100px]">Volador</button>
+      <button class="p-[5px] bg-[#EF3F7A] rounded font-bold text-[12px] w-[100px]">Psiquico</button>
+      <button class="p-[5px] bg-[#C8D088] rounded font-bold text-[12px] w-[100px]">Bicho</button>
+      <button class="p-[5px] bg-[#D7D4C0] rounded font-bold text-[12px] w-[100px]">Roca</button>
+      <button class="p-[5px] bg-[#B22222] rounded font-bold text-[12px] w-[100px]">Fantasma</button>
+      <button class="p-[5px] bg-[#4F60E2] rounded font-bold text-[12px] w-[100px]">Dragón</button>
+      <button class="p-[5px] bg-[#4F3F3D] rounded font-bold text-[12px] w-[100px]">Siniestro</button>
+      <button class="p-[5px] bg-[#AFD0DB] rounded font-bold text-[12px] w-[100px]">Acero</button>
+      <button class="p-[5px] bg-[#F6B7F7] rounded font-bold text-[12px] w-[100px]">Hada</button>
+    </div>
+  </div>
+  <main class="p-[20px] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4" id="pokemon-list">                                                                                                      
+  </main>
+  <script src="index.js"></script>
+</body>
+</html>
